@@ -1,0 +1,4 @@
+http://developer.android.com/guide/topics/connectivity/nfc/advanced-nfc.html
+http://stackoverflow.com/questions/12453658/reading-data-from-nfc-tag
+http://code.tutsplus.com/tutorials/reading-nfc-tags-with-android--mobile-17278
+http://stackoverflow.com/questions/6060312/how-do-you-read-the-unique-id-of-an-nfc-tag-on-android

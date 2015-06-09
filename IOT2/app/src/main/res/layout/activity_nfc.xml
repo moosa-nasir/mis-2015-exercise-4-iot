@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".nfc">
+
+    <TextView
+        android:id="@+id/tag_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tag Data will be shown here."
+        android:layout_below="@+id/tag_data_heading"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Tag ID:   "
+        android:id="@+id/tag_id_head"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show ID Here"
+        android:id="@+id/tag_id"
+        android:layout_above="@+id/tag_tech_head"
+        android:layout_toRightOf="@+id/tag_id_head"
+        android:layout_toEndOf="@+id/tag_id_head"
+        android:layout_alignBottom="@+id/tag_id_head"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Tag Technology:   "
+        android:id="@+id/tag_tech_head"
+        android:layout_below="@+id/tag_id_head"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Tech Here"
+        android:id="@+id/tag_tech"
+        android:layout_alignBottom="@+id/tag_tech_head"
+        android:layout_toRightOf="@+id/tag_tech_head"
+        android:layout_toEndOf="@+id/tag_tech_head" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Tag Data: "
+        android:id="@+id/tag_data_heading"
+        android:layout_below="@+id/tag_tech_head"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Hex and ASCII"
+        android:id="@+id/tag_button"
+        android:layout_below="@+id/tag_data"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="showHexAndAscii"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="HEX:"
+        android:id="@+id/tag_hex_head"
+        android:layout_below="@+id/tag_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tag Data's HEX will be shown here."
+        android:id="@+id/tag_hex"
+        android:layout_below="@+id/tag_hex_head"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="ASCII"
+        android:id="@+id/tag_ascii_head"
+        android:layout_below="@+id/tag_hex"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tag Data&apos;s ASCII will be shown here."
+        android:id="@+id/tag_ascii"
+        android:layout_below="@+id/tag_ascii_head"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
